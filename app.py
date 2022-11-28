@@ -28,11 +28,19 @@ def welcome():
     )
 
 @app.route("/api/v1.0/precipitation")
-def precipitation_gauge():
+def precipitation():
     print("/api/v1.0/precipitation - route hit")
     return jsonify()
-        
 
+@app.route("/api/v1.0/stations")
+def stations():
+    print("/api/v1.0/stations - route hit")
+    return jsonify()
+        
+@app.route("/api/v1.0/tobs")
+def temperature():
+    print("/api/v1.0/tobs - route hit")
+    return jsonify()
 
 app.run(debug=True)
 
