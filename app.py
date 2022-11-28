@@ -30,12 +30,8 @@ def welcome():
 @app.route("/api/v1.0/precipitation")
 def precipitation_gauge():
     print("/api/v1.0/precipitation - route hit")
-    return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/precipitation<br/>"
-        f"/api/v1.0/stations<br/>"
-        f"/api/v1.0/tobs" 
-    )
+    return jsonify()
+        
 
 
 app.run(debug=True)
